@@ -48,8 +48,8 @@ function initializeCode() {
 
       text.innerText = dogSummary[i];
       div3.appendChild(img);
-      div2.appendChild(div3);
       div2.appendChild(text);
+      div2.appendChild(div3);
       div1.appendChild(h1);
       div1.appendChild(div2);
       containerDiv.appendChild(div1);
