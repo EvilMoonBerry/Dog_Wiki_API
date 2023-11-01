@@ -37,7 +37,7 @@ function initializeCode() {
       text.classList.add("wiki-text");
 
       let div1 = document.createElement("div");
-      div1.classList.add("class", "wiki-item");
+      div1.className="wiki-item";
       let div2 = document.createElement("div");
       div2.setAttribute("class", "wiki-content");
       let div3 = document.createElement("div");
