@@ -33,11 +33,11 @@ function initializeCode() {
       const data = await dataPromise.json();
 
       let img = document.createElement("img");
-      img.classList.add("wiki-img");
+      div1.className = "wiki-img";
       let h1 = document.createElement("h1");
-      h1.classList.add("wiki-header");
+      div1.className = "wiki-header";
       let text = document.createElement("p");
-      text.classList.add("wiki-text");
+      div1.className ="wiki-text";
 
       let div1 = document.createElement("div");
       div1.className = "wiki-item";
