@@ -57,7 +57,7 @@ function initializeCode() {
       div1.appendChild(div2);
       container.appendChild(div1);
     }
-    body.appendChild(container);
+    document.body.appendChild(container);
 
     
   }
