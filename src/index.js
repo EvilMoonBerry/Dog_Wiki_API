@@ -37,11 +37,11 @@ function initializeCode() {
       text.classList.add("wiki-text");
 
       let div1 = document.createElement("div");
-      div1.classList.add("wiki-item");
+      div1.setAttribute("class", "wiki-item");
       let div2 = document.createElement("div");
-      div2.classList.add("wiki-content");
+      div2.setAttribute("class", "wiki-content");
       let div3 = document.createElement("div");
-      div3.classList.add("img-container");
+      div3.setAttribute("class", "img-container");
 
       img.src = data.message;
       h1.innerText = dogList[i];
