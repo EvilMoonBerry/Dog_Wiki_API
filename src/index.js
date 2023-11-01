@@ -22,7 +22,6 @@ function initializeCode() {
       let summary = data.extract;
       dogSummary.push(summary);
     }
-    let body = document.getElementById("body");
 
     let container = document.createElement("div");
     container.className = "container";
@@ -32,19 +31,19 @@ function initializeCode() {
       const dataPromise = await fetch(url);
       const data = await dataPromise.json();
 
-      let img = document.createElement("img");
-      div1.className = "wiki-img";
-      let h1 = document.createElement("h1");
-      div1.className = "wiki-header";
-      let text = document.createElement("p");
-      div1.className ="wiki-text";
-
       let div1 = document.createElement("div");
       div1.className = "wiki-item";
       let div2 = document.createElement("div");
       div2.className = "wiki-content";
       let div3 = document.createElement("div");
       div3.className = "img-container";
+
+      let img = document.createElement("img");
+      img.className = "wiki-img";
+      let h1 = document.createElement("h1");
+      h1.className = "wiki-header";
+      let text = document.createElement("p");
+      text.className = "wiki-text";
 
       img.src = data.message;
       h1.innerText = dogList[i];
@@ -58,8 +57,6 @@ function initializeCode() {
       container.appendChild(div1);
     }
     document.body.appendChild(container);
-
-    
   }
   submmit();
 }
