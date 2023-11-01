@@ -1,6 +1,7 @@
 
 //Pictures of the dogs are taken from API https://dog.ceo/api/breed/
 //Summaries are taken from API https://en.wikipedia.org/api/rest_v1/page/summary/ + dogname
+//help for optimizing assistant teacher
 if (document.readyState !== "loading") {
   initializeCode();
 } else {
