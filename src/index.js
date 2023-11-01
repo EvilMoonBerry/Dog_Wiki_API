@@ -9,7 +9,8 @@ if (document.readyState !== "loading") {
   });
 }
 
-const initializeCode=async()=> {
+function initializeCode() {
+  async function submmit() {
     const dogList = ["basenji", "pug", "doberman", "malamute", "pomeranian"];
 
     const dogSummary = [];
@@ -57,4 +58,5 @@ const initializeCode=async()=> {
     }
     document.body.appendChild(container);
   }
-
+  submmit();
+}
